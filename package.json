@@ -1,0 +1,23 @@
+{
+  "name": "urara-docs",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/importantimport/urara-docs.git"
+  },
+  "author": "",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/importantimport/urara-docs/issues"
+  },
+  "homepage": "https://github.com/importantimport/urara-docs#readme",
+  "devDependencies": {
+    "vitepress": "0.22.0"
+  }
+}
