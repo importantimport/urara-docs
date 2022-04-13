@@ -36,4 +36,4 @@ Some icons are provided by default to be compatible with web app manifests and m
 /urara/assets/manifest@512.png - Manifest mask icon, 512x512
 ```
 
-You can also replace the number of icons and their paths by modifying `/src/lib/config/icons.ts`.
+You can also replace the number of icons and their paths by modifying `/src/lib/config/icon.ts`.

@@ -9,5 +9,6 @@ actionLink: /getting-started/intro
 ---
 
 ```bash
-npx degit importantimport/urara
+npx degit importantimport/urara my-blog && cd my-blog # create a new project in my-blog
+pnpm i # if u don't have pnpm installed, run: npx pnpm add -g pnpm
 ```

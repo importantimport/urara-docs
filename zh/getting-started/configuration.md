@@ -36,4 +36,4 @@ export const site: Site = {
 /urara/assets/manifest@512.png - Manifest 遮罩圖示，512x512
 ```
 
-也可以通過修改 `/src/lib/config/icons.ts` 替換圖示數量及路徑。
+也可以通過修改 `/src/lib/config/icon.ts` 替換圖示數量及路徑。

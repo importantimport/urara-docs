@@ -5,5 +5,5 @@ Documentation site for [Urara](https://github.com/importantimport/urara), PRs we
 ## Developing
 
 ```bash
-nr dev # http://localhost:3000
+pnpm dev # http://localhost:3000
 ```
