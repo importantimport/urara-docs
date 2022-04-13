@@ -1,23 +1,21 @@
 {
   "name": "urara-docs",
   "version": "0.0.1",
-  "description": "",
+  "description": "Documentation for Urara",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "serve": "vitepress serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/importantimport/urara-docs.git"
-  },
-  "author": "",
+  "author": "藍",
   "license": "WTFPL",
-  "bugs": {
-    "url": "https://github.com/importantimport/urara-docs/issues"
-  },
+  "repository": "importantimport/urara-docs",
+  "bugs": "https://github.com/importantimport/urara-docs/issues",
   "homepage": "https://github.com/importantimport/urara-docs#readme",
   "devDependencies": {
-    "vitepress": "0.22.0"
+    "unocss": "^0.31.2",
+    "vite": "^2.9.1",
+    "vite-plugin-pwa": "^0.11.13",
+    "vitepress": "0.22.3"
   }
 }

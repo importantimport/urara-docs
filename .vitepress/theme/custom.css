@@ -1,4 +1,4 @@
 :root {
-  --c-brand: #e96d7c;
-  --c-brand-light: #e24053;
+  --c-brand: #e96d7c !important;
+  --c-brand-light: #e24053 !important;
 }

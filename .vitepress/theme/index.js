@@ -1,6 +1,9 @@
-import Theme from 'vitepress/theme'
+import 'uno.css'
 import './custom.css'
-
+import Theme from 'vitepress/theme'
 export default {
-    ...Theme
+    ...Theme,
+    // enhanceApp({ app }) {
+        // app.component('VueClickAwayExample', VueClickAwayExample)
+    // }
 }
