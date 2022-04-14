@@ -7,18 +7,19 @@
 從 site.ts 開始：
 
 ```ts
-export const site: Site = {
+export const site: SiteConfig = {
+  protocol: 'https://', // 協議（一般無需更改）
+  domain: (import.meta.env.URARA_SITE_DOMAIN as string) ?? 'urara-demo.netlify.app', // 域名
   title: 'Urara', // 標題
   subtitle: 'Sweet & Powerful SvelteKit Blog Template', // 副標題
   lang: 'en-US', // 語言
   descr: 'Powered by SvelteKit/Urara', // 描述
   author: {
     name: 'John Doe', // 作者名稱
-    avatar: '/assets/maskable@512.png', // 作者圖片
+    photo: '/assets/maskable@512.png', // 作者圖片
     status: '🌸', // 作者狀態
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.' // 作者描述
   },
-  url: (import.meta.env.URARA_SITE_URL as string) ?? 'https://example.com', // 域名
   themeColor: '#3D4451' // 主題顔色（目前僅用於 Manifest）
 }
 ```

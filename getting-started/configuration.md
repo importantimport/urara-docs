@@ -7,7 +7,9 @@ This project uses `/src/lib/config/` as the config file directory, but most conf
 Starting from site.ts.
 
 ```ts
-export const site: Site = {
+export const site: SiteConfig = {
+  protocol: 'https://', // site protocol (usually no change is required)
+  domain: (import.meta.env.URARA_SITE_DOMAIN as string) ?? 'urara-demo.netlify.app', // site domain
   title: 'Urara', // title
   subtitle: 'Sweet & Powerful SvelteKit Blog Template', // subtitle
   lang: 'en-US', // language
@@ -18,7 +20,6 @@ export const site: Site = {
     status: '🌸', // author status
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.' // author bio
   },
-  url: (import.meta.env.URARA_SITE_URL as string) ? 'https://example.com', // domain
   themeColor: '#3D4451' // theme color (currently only used in Manifest)
 }
 ```
