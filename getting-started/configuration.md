@@ -16,7 +16,7 @@ export const site: SiteConfig = {
   descr: 'Powered by SvelteKit/Urara', // description
   author: {
     name: 'John Doe', // author name
-    avatar: '/assets/maskable@512.png', // author image
+    photo: '/assets/maskable@512.png', // author image
     status: '🌸', // author status
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.' // author bio
   },
