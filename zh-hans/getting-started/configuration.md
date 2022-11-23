@@ -16,7 +16,7 @@ export const site: SiteConfig = {
   descr: 'Powered by SvelteKit/Urara', // 描述
   author: {
     name: 'John Doe', // 作者名称
-    photo: '/assets/maskable@512.png', // 作者图片
+    avatar: '/assets/maskable@512.png', // 作者图片
     status: '🌸', // 作者状态
     bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.' // 作者描述
   },
