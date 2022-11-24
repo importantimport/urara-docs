@@ -4,7 +4,7 @@
 
 本項目使用 `/src/lib/config/` 作爲配置文件目錄，但多數配置在一般情況下無需修改。
 
-從 site.ts 開始：
+### site.ts | 網站信息
 
 ```ts
 export const site: SiteConfig = {
@@ -24,7 +24,98 @@ export const site: SiteConfig = {
 }
 ```
 
-## 圖示
+
+### general.ts | 主題
+
+```ts
+export const theme: ThemeConfig = [
+  {
+    name: 'light', // 主題變量名
+    text: '🌕 Light' // 主題顯示名，可修改
+  },
+  {
+    name: 'dark',
+    text: '🌑 Dark'
+  },
+]
+```
+
+本項目使用了 [daisyUI](https://daisyui.com/) 主題，查看可用的 [daisyUI 主題](https://daisyui.com/docs/themes/?lang=zh_tw)。
+
+### general.ts | 標題欄
+
+```ts
+export const header: HeaderConfig = {
+  nav: [
+    {
+      text: 'Get Started', // 按鈕名稱
+      link: '/hello-world' // 指向的頁面，可以填寫其他網站
+    },
+    {
+      text: 'Elements',
+      link: '/hello-world/elements'
+    }
+  ]
+}
+```
+還可以根據下面的格式在標題欄添加下拉選單。
+
+```ts
+{
+   text: 'Hello World',
+   children: [
+     {
+      text: 'Get Started',
+      link: '/hello-world'
+     },
+     {
+       text: 'Elements',
+       link: '/hello-world/elements'
+     },
+	 {
+	   text: 'ToC Disabled',
+	   link: '/hello-world/toc-disabled'
+	 }
+   ]
+}
+```
+
+### general.ts | 頁腳
+
+大致與標題相同，下拉選單除外。
+
+```ts
+export const footer: FooterConfig = {
+  nav: [
+    {
+      text: 'Feed', // 超連結名稱
+      link: '/atom.xml' // 指向的頁面，可以填寫其他網站
+    },
+    {
+      text: 'Sitemap',
+      link: '/sitemap.xml'
+    }
+  ]
+}
+```
+
+### general.ts | 日期格式
+
+```ts
+export const date: DateConfig = {
+  locales: 'en-US', // 語言，可參考 IETF 語言標籤
+  options: {
+    year: '2-digit', // 年份: `numeric`, `2-digit`
+    weekday: 'long', // 星期: `narrow`, `short`, `long`
+    month: 'short', // 月份: `numeric`, `2-digit`, `narrow`, `short`, `long`
+    day: 'numeric' // 日期: `numeric`, `2-digit`
+  }
+}
+```
+
+要添加更多選項，請參考 [Intl.DateTimeFormat - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)。
+
+### icon.ts | 圖示
 
 默認提供一些圖示以兼容 Web app manifests 及現代瀏覽器，可以自行替換。
 
