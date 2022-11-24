@@ -1,10 +1,10 @@
-## Configuration
+# Configuration
 
 ## Config files
 
 This project uses `/src/lib/config/` as the config file directory, but most configurations do not need to be modified in general.
 
-Starting from site.ts.
+### site.ts | Site Info
 
 ```ts
 export const site: SiteConfig = {
@@ -24,7 +24,98 @@ export const site: SiteConfig = {
 }
 ```
 
-## Icons
+### general.ts | Theme
+
+```ts
+export const theme: ThemeConfig = [
+  {
+    name: 'light', // Theme varable name
+    text: '🌕 Light' // Theme display name, can be modified
+  },
+  {
+    name: 'dark',
+    text: '🌑 Dark'
+  },
+]
+```
+
+This project uses the [daisyUI](https://daisyui.com/) theme, see the availble [daisyUI themes](https://daisyui.com/docs/themes/?lang=en).
+
+### general.ts | Header
+
+```ts
+export const header: HeaderConfig = {
+  nav: [
+    {
+      text: 'Get Started', // Button name
+      link: '/hello-world' // Link to page, or other sites
+    },
+    {
+      text: 'Elements',
+      link: '/hello-world/elements'
+    }
+  ]
+}
+```
+
+Dropdown menu can added to the header following the format below.
+
+```ts
+{
+   text: 'Hello World',
+   children: [
+     {
+      text: 'Get Started',
+      link: '/hello-world'
+     },
+     {
+       text: 'Elements',
+       link: '/hello-world/elements'
+     },
+	 {
+	   text: 'ToC Disabled',
+	   link: '/hello-world/toc-disabled'
+	 }
+   ]
+}
+```
+
+### general.ts | Footer
+
+Same as the Header, except the dropdown menu.
+
+```ts
+export const footer: FooterConfig = {
+  nav: [
+    {
+      text: 'Feed', // Hypelink name
+      link: '/atom.xml' // Link to page, or other sites
+    },
+    {
+      text: 'Sitemap',
+      link: '/sitemap.xml'
+    }
+  ]
+}
+```
+
+### general.ts | Date Format
+
+```ts
+export const date: DateConfig = {
+  locales: 'en-US', // Language，refer to IETF language tag
+  options: {
+    year: '2-digit', // Year: `numeric`, `2-digit
+    weekday: 'long', // Week: `narrow`, `short`, `long`
+    month: 'short', // Month: `numeric`, `2-digit`, `narrow`, `short`, `long`
+    day: 'numeric' // day: `numeric`, `2-digit`
+  }
+}
+```
+
+For more additonal, see [Intl.DateTimeFormat - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat).
+
+### icon.ts | Icons
 
 Some icons are provided by default to be compatible with web app manifests and modern browsers, and can be replaced by yourself.
 

@@ -9,6 +9,6 @@ actionLink: /zh/getting-started/intro
 ---
 
 ```bash
-npx degit importantimport/urara my-blog && cd my-blog # create a new project in my-blog
-pnpm i # if u don't have pnpm installed, run: npx pnpm add -g pnpm
+npx degit importantimport/urara my-blog && cd my-blog # 在名為 my-blog 的文件夾中新建項目
+pnpm i # 如果你沒有安裝 pnpm，請運行: npx pnpm add -g pnpm
 ```
