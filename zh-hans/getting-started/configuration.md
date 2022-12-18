@@ -124,7 +124,7 @@ export const date: DateConfig = {
 /urara/favicon.png - 网站图标，32x32
 /urara/assets/any@180.png - 网站图标，180x180
 /urara/assets/any@192.png - 网站 / Manifest 图标，192x192
-/urara/assets/any@512.png - Manifest 图片，512x512
+/urara/assets/any@512.png - Manifest 图标，512x512
 /urara/assets/manifest@192.png - Manifest 遮罩图标，192x192
 /urara/assets/manifest@512.png - Manifest 遮罩图标，512x512
 ```
