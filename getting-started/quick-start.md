@@ -24,7 +24,7 @@ If your computer does not have Node.js installed, you will need to [download and
 
 This item uses the [pnpm](https://pnpm.io/zh) package manager by default.
 
-Installed via npx.
+Installed via npm.
 
 ```bash
 npm install -g pnpm

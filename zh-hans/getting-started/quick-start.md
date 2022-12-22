@@ -24,7 +24,7 @@ node --version
 
 本项目默认使用 [pnpm](https://pnpm.io/zh) 包管理器。
 
-通过 npx 安装：
+通过 npm 安装：
 
 ```bash
 npm install -g pnpm
