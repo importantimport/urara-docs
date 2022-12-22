@@ -23,6 +23,10 @@ const sidebar = (lang, index) => [
         text: ['Configuration', '配置', '設定', '配置'][index],
         link: lang + 'getting-started/configuration',
       },
+      {
+        text: ['Deploy', '架設', '配備', '部署'][index],
+        link: lang + 'getting-started/deploy',
+      },
     ],
   },
 ]
@@ -34,7 +38,7 @@ const locales = (lang, index) => ({
     'Edit on GitHub',
     '在 GitHub 上編輯',
     'GitHub でこのページを編集',
-	'在 GitHub 上编辑',
+	  '在 GitHub 上编辑',
   ][index],
   lastUpdated: ['Last Updated', '最後更新于', '最終更新', '最后更新于'][index],
   nav: nav(lang, index),
