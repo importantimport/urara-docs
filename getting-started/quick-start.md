@@ -27,7 +27,7 @@ This item uses the [pnpm](https://pnpm.io/zh) package manager by default.
 Installed via npm.
 
 ```bash
-npm install -g pnpm
+npm i -g pnpm
 ```
 
 For other installation methods, please refer to the [official documentation](https://pnpm.io/zh/installation).

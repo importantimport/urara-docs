@@ -27,7 +27,7 @@ node --version
 通過 npm 安裝：
 
 ```bash
-npm install -g pnpm
+npm i -g pnpm
 ```
 
 其他安裝方式請參考[官方文檔](https://pnpm.io/zh/installation)。
