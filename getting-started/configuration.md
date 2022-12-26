@@ -103,7 +103,7 @@ export const footer: FooterConfig = {
 
 ```ts
 export const date: DateConfig = {
-  locales: 'en-US', // Language，refer to IETF language tag
+  locales: 'en-US', // Language,refer to IETF language tag
   options: {
     year: '2-digit', // Year: `numeric`, `2-digit
     weekday: 'long', // Week: `narrow`, `short`, `long`
