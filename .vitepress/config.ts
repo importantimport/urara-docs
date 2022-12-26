@@ -29,6 +29,15 @@ const sidebar = (lang, index) => [
       },
     ],
   },
+  {
+    text: ['Advanced', '進階', '高度な', '进阶'][index],
+    children: [
+      {
+        text: ['Extension', '拓展', '拡張', '拓展'][index],
+        link: lang + 'advanced/extension',
+      }
+    ],
+  },
 ]
 
 const locales = (lang, index) => ({
