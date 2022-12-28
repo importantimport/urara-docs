@@ -256,3 +256,51 @@ It is people like you who bring extension plugins to this project, and the follo
   You can also refer to the use case source code: [**blog/friends.ts at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/src/lib/config/friends.ts#L29).
 
 </details>
+
+### Projects
+
+#### Made by [SevicheCC](https://github.com/sevichecc) | Demo - [Seviche.cc](https://seviche.cc/projects)
+
+<details>
+  <summary>Configuration</summary>
+  
+  **⚠ This extension is not yet included in Urara, you need to download the component manually.**
+
+  1. Download the [**projects.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/projects.svelte) file and put it in the `src/lib/components/extra/` directory.
+
+  2. Download the [**+page.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/%2Bpage.svelte) file and create a new folder named `projects` in the `src/routes/` directory and put it there.
+
+  3. Download the [**project.ts**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/project.ts) file and put it in the `src/lib/config/` directory.
+
+  #### Usage:
+
+  The default style is provided in ``projects.ts`` and can be replaced by yourself:
+  
+  ```ts
+  export type Project = {
+    id: string
+    name: string
+    tags?: string[]
+    feature?: string
+    description?: string
+    img: string
+    link?: string
+  }
+
+  export const projects: Project[] = [
+    {
+      id: 'urara', // HTML ID
+      name: 'Urara', // project Name
+      tags: ['Svelte', 'TypeScript'],  // tag
+      description: // description
+        "🌸 Sweet, Powerful, IndieWeb-Compatible SvelteKit Blog Starter. [δ](Delta)",
+      feature: 'Svelte', // feature
+      img: 'https://github.com/importantimport/urara/raw/main/urara/hello-world/urara.webp',
+      link: 'https://github.com/importantimport/urara'
+    }
+  ]
+  ```
+
+  You can also refer to the use case source code: [**Urara-Blog/projects.ts at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/src/lib/config/projects.ts#L11).
+
+</details>

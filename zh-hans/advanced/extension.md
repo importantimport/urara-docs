@@ -255,3 +255,51 @@
   您还可以参考使用例源码：[**blog/friends.ts at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/src/lib/config/friends.ts#L29)。
 
 </details>
+
+### 项目展示
+
+#### 由 [SevicheCC](https://github.com/sevichecc) 制作 | 演示 - [Seviche.cc](https://seviche.cc/projects)
+
+<details>
+  <summary>配置</summary>
+  
+  **⚠ 此拓展尚未包含在 Urara 中，您需要手动下载组件。**
+
+  1. 下载 [**projects.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/projects.svelte) 文件，放入 `src/lib/components/extra/` 目录。
+
+  2. 下载 [**+page.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/%2Bpage.svelte) 文件，在 `src/routes/` 目录下新建一个名为 `projects` 的文件夹，放入其中。
+
+  3. 下载 [**project.ts**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/project.ts) 文件，放入 `src/lib/config/` 目录。
+
+  #### 使用方法：
+
+  `projects.ts` 中提供了默认样式，可以自行替换：
+  
+  ```ts
+  export type Project = {
+    id: string
+    name: string
+    tags?: string[]
+    feature?: string
+    description?: string
+    img: string
+    link?: string
+  }
+
+  export const projects: Project[] = [
+    {
+      id: 'urara', // HTML ID
+      name: 'Urara', // 项目名
+      tags: ['Svelte', 'TypeScript'], // 标签
+      description: // 描述
+        "🌸 Sweet, Powerful, IndieWeb-Compatible SvelteKit Blog Starter. [δ](Delta)",
+      feature: 'Svelte', // 特点
+      img: 'https://github.com/importantimport/urara/raw/main/urara/hello-world/urara.webp',
+      link: 'https://github.com/importantimport/urara'
+    }
+  ]
+  ```
+
+  您还可以参考使用例源码：[**Urara-Blog/projects.ts at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/src/lib/config/projects.ts#L11)。
+
+</details>
