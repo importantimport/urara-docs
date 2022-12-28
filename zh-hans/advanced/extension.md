@@ -194,7 +194,6 @@
 
   #### 在使用前需下载组件：
 
-
   - **回复：[reply.svelte](https://github.com/importantimport/urara-docs/raw/master/public/extension/actions/reply.svelte) - <small>由 [藍+85CD](https://github.com/kwaa) 制作 | 演示 - [./kwaa.dev](https://kwaa.dev/intro-urara)</small>**
 
   - **分享：[share.svelte](https://github.com/importantimport/urara-docs/raw/master/public/extension/actions/share.svelte) - <small>由 [藍+85CD](https://github.com/kwaa) 制作 | 演示 - [./kwaa.dev](https://kwaa.dev/intro-urara)</small>**
@@ -253,6 +252,6 @@
   ]
   ```
 
-  您还可以参考使用例源码：[blog/friends.ts at main · kwaa/blog](https://github.com/kwaa/blog/blob/main/src/lib/config/friends.ts#L29)。
+  您还可以参考使用例源码：[**blog/friends.ts at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/src/lib/config/friends.ts#L29)。
 
 </details>
