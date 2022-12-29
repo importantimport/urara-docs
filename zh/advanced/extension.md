@@ -72,6 +72,35 @@
 
 </details>
 
+### 狀態提示
+
+#### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [Seviche.cc](https://seviche.cc/2022-12-20-pleroma-mod/)
+
+<details>
+  <summary>配置</summary>
+  
+  **✅ 此拓展已包含在 Urara 中，無需額外下載。**
+
+  #### 在使用前需導入組件：
+
+  ```md
+  <script>
+    import Alert from '$lib/components/extra/alert.svelte'
+  </script>
+  ```
+
+  #### 使用方法：
+
+  ```md
+  <Alert status="warning" description="警告資訊" title="警告標題"/>
+  ```
+
+  您可以根據需要修改提示的狀態，可用的選項有：`info`、`success`、`warning` 和 `error`。
+
+  您還可以參考使用例源碼：[**Urara-Blog/+page.svelte.md at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/urara/2022-12-20-pleroma-mod/+page.svelte.md?plain=1#L12)。
+
+</details>
+
 ## 評論系統
 
 ### Giscus
