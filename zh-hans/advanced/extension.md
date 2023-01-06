@@ -55,17 +55,13 @@
   #### 使用方法：
 
   ```md
-  <Profile subname="这里是姓氏" >
-    <div class="flex flex-col md:flex-row gap-4 mt-4"></div>
-  </Profile>
+  <Profile subname="这里是姓氏"/>
   ```
 
   此拓展会在您的文章内展示个人资料卡片，其中头像、姓名和简介会跟随您在 `site.ts` 的设定，您还可以通过 `avatar="<图片路径>"` 、 `name="姓名"` 和 ``bio={`简介`}`` 来手动指定它们：
 
   ```md
-  <Profile name="姓名" avatar="/assets/maskable@512.png" subname="这里是姓氏" bio={`这里是简介。<br>这是第二行简介。`} >
-    <div class="flex flex-col md:flex-row gap-4 mt-4"></div>
-  </Profile>
+  <Profile name="姓名" avatar="/assets/maskable@512.png" subname="这里是姓氏" bio={`这里是简介。<br>这是第二行简介。`} />
   ```
 
   您还可以参考使用例源码：[**blog/+page.svelte.md at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/urara/about/+page.svelte.md?plain=1#L13)。

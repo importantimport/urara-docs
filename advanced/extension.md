@@ -55,17 +55,13 @@ It is people like you who bring extension plugins to this project, and the follo
   #### Usage:
 
   ```md
-  <Profile subname="Here is the last name." >
-    <div class="flex flex-col md:flex-row gap-4 mt-4"></div>
-  </Profile>
+  <Profile subname="Here is the last name."/>
   ```
 
   This extension will display a profile card within your post, where the avatar, name and profile will follow your settings in `site.ts`, and you can also specify them manually via  `avatar="<image path>"`, `name="name"` and ``bio={`bio`}``.
 
   ```md
-  <Profile name="name" avatar="/assets/maskable@512.png" subname="Here is the last name." bio={`Here is the bio.<br>This is the second line of the bio.`} >
-    <div class="flex flex-col md:flex-row gap-4 mt-4"></div>
-  </Profile>
+  <Profile name="name" avatar="/assets/maskable@512.png" subname="Here is the last name." bio={`Here is the bio <br>This is the second line of the bio.`} />
   ```
 
   You can also refer to the use case source code: [**blog/+page.svelte.md at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/urara/about/+page.svelte.md?plain=1#L13).
