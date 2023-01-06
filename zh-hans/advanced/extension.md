@@ -24,10 +24,10 @@
   #### 使用方法：
 
   ```md
-  <YouTube id="<WysuxO4yR04>" />
+  <YouTube id="WysuxO4yR04"/>
   ```
 
-  此拓展会在您的文章内展示 [https://www.youtube.com/watch?v=<u>**WysuxO4yR04**</u>](https://www.youtube.com/watch?v=WysuxO4yR04) 视频。
+  此拓展会在您的文章内展示 [https://www.youtube.com/watch?v=<u>**WysuxO4yR04**</u>](https://www.youtube.com/watch?v=WysuxO4yR04) 视频，您可以根据需要把 **WysuxO4yR04** 替换为其他的 YouTube 视频 ID。
 
   您还可以参考使用例源码：[**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139)。
 

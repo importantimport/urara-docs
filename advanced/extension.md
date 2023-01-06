@@ -24,10 +24,10 @@ It is people like you who bring extension plugins to this project, and the follo
   #### Usage:
 
   ```md
-  <YouTube id="<WysuxO4yR04>" />
+  <YouTube id="WysuxO4yR04"/>
   ```
 
-  This extension will show the [https://www.youtube.com/watch?v=<u>**WysuxO4yR04**</u>](https://www.youtube.com/watch?v=WysuxO4yR04) video within your post.
+  This extension will show the [https://www.youtube.com/watch?v=<u>**WysuxO4yR04**</u>](https://www.youtube.com/watch?v=WysuxO4yR04) video within your post, and you can replace **WysuxO4yR04** to other YouTube video ID as needed.
 
   You can also refer to the use case source code: [**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139).
 
