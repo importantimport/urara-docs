@@ -29,7 +29,7 @@
 
   此拓展会在您的文章内展示 [https://www.youtube.com/watch?v=<u>**WysuxO4yR04**</u>](https://www.youtube.com/watch?v=WysuxO4yR04) 视频。
 
-  您还可以参考使用例源码：[urara/+page.svelte.md at main · importantimport/urara](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139)。
+  您还可以参考使用例源码：[**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139)。
 
 </details>
 
@@ -68,7 +68,7 @@
   </Profile>
   ```
 
-  您还可以参考使用例源码：[blog/+page.svelte.md at main · kwaa/blog](https://github.com/kwaa/blog/blob/main/urara/about/+page.svelte.md?plain=1#L13)。
+  您还可以参考使用例源码：[**blog/+page.svelte.md at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/urara/about/+page.svelte.md?plain=1#L13)。
 
 </details>
 
@@ -161,7 +161,7 @@
 
   配置完成后，Giscus 既可使用，将显示在文章末尾后。
 
-  您还可以参考使用例源码：[blog/post.ts at main · kwaa/blog](https://github.com/kwaa/blog/blob/main/src/lib/config/post.ts#L17)。
+  您还可以参考使用例源码：[**blog/post.ts at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/src/lib/config/post.ts#L17)。
 
 </details>
 
