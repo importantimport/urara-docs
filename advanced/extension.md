@@ -332,7 +332,7 @@ It is people like you who bring extension plugins to this project, and the follo
 
   2. Download the [**+page.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/%2Bpage.svelte) file and create a new folder named `projects` in the `src/routes/` directory and put it there.
 
-  3. Download the [**project.ts**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/project.ts) file and put it in the `src/lib/config/` directory.
+  3. Download the [**projects.ts**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/projects.ts) file and put it in the `src/lib/config/` directory.
 
   #### Usage:
 

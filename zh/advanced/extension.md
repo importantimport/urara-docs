@@ -331,7 +331,7 @@
 
   2. 下載 [**+page.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/%2Bpage.svelte) 文件，在 `src/routes/` 目錄下新建一個名為 `projects` 的文件夾，放入其中。
 
-  3. 下載 [**project.ts**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/project.ts) 文件，放入 `src/lib/config/` 目錄。
+  3. 下載 [**projects.ts**](https://github.com/importantimport/urara-docs/raw/master/public/extension/project/projects.ts) 文件，放入 `src/lib/config/` 目錄。
 
   #### 使用方法：
 
