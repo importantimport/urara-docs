@@ -97,6 +97,43 @@
 
 </details>
 
+### Spotify
+
+#### 由 [藍+85CD](https://github.com/kwaa) & [Hubert Chen](https://github.com/interstellar750) 製作 | 演示 - [Hubert's Blog](https://trle5.xyz/about/testagain/)
+
+<details>
+  <summary>配置</summary>
+  
+  **⚠ 此拓展尚未包含在 Urara 中，您需要手動下載組件。**
+
+  下載 [**spotify.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/spotify/spotify.svelte) 文件，將其放入 `src/lib/components/extra/` 目錄內。
+
+  #### 在使用前需導入組件：
+
+  ```md
+  <script lang="ts">
+    import Spotify from '$lib/components/extra/spotify.svelte'
+  </script>
+  ```
+
+  #### 使用方法：
+
+  ```md
+  <Spotify type="album" id="0vXB2JFdOphGK7ybYLXSRI"/>
+  ```
+
+  此拓展會在您的文章內展示 [https://open.spotify.com/<u>**album**</u>/<u>**0vXB2JFdOphGK7ybYLXSRI**</u>](https://open.spotify.com/album/0vXB2JFdOphGK7ybYLXSRI) 專輯，您可以根據需要把 **album** 替換為其他的播放清單類型，把 **0vXB2JFdOphGK7ybYLXSRI** 替換為其他的 Spotify 播放清單 ID。
+
+  此拓展預設了默認的顏色、大小和寬度風格，它們被默認定義為 `theme={true}`、 `compact={false}` 和 ``width="100%"``，您也可以進行手動調整：
+
+  ```md
+  <Spotify type="album" id="0vXB2JFdOphGK7ybYLXSRI" theme={false} compact={true} width="95%"/>
+  ```
+
+  您還可以參考使用例源碼：[**hexo_s/+page.svelte.md at urara · Interstellar750/hexo_s**](https://github.com/Interstellar750/hexo_s/blob/urara/urara/about/testagain/+page.svelte.md?plain=1#L46)。
+
+</details>
+
 ## 評論系統
 
 ### Giscus

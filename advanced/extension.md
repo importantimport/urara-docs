@@ -97,6 +97,43 @@ It is people like you who bring extension plugins to this project, and the follo
 
 </details>
 
+### Spotify
+
+#### Made by [藍+85CD](https://github.com/kwaa) & [Hubert Chen](https://github.com/interstellar750) | Demo - [Hubert's Blog](https://trle5.xyz/about/testagain/)
+
+<details>
+  <summary>Configuration</summary>
+  
+  **⚠ This extension is not yet included in Urara, you need to download the component manually.**
+
+  Download the [**spotify.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/spotify/spotify.svelte) file and put it in the `src/lib/components/extra/` directory.
+
+  #### Components to be imported before use:
+
+  ```md
+  <script lang="ts">
+    import Spotify from '$lib/components/extra/spotify.svelte'
+  </script>
+  ```
+
+  #### Usage:
+
+  ```md
+  <Spotify type="album" id="0vXB2JFdOphGK7ybYLXSRI"/>
+  ```
+
+  This extension will be displayed within your article [https://open.spotify.com/<u>**album**</u>/<u>**0vXB2JFdOphGK7ybYLXSRI**</u>](https://open.spotify.com/album/0vXB2JFdOphGK7ybYLXSRI) album, you can replace **album** with other playlist types and **0vXB2JFdOphGK7ybYLXSRI** with other Spotify playlist ID as needed.
+
+  This expansion presets the default theme, size and width styles, which are defined by default as `theme={true}`, `compact={false}` and `width="100%"`, or you can manually adjust:
+
+  ```md
+  <Spotify type="album" id="0vXB2JFdOphGK7ybYLXSRI" theme={false} compact={true} width="95%"/>
+  ```
+
+  You can also refer to the use case source code: [**hexo_s/+page.svelte.md at urara · Interstellar750/hexo_s**](https://github.com/Interstellar750/hexo_s/blob/urara/urara/about/testagain/+page.svelte.md?plain=1#L46).
+
+</details>
+
 ## Comment System
 
 ### Giscus
