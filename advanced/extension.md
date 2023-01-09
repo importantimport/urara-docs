@@ -99,14 +99,12 @@ It is people like you who bring extension plugins to this project, and the follo
 
 ### Spotify
 
-#### Made by [藍+85CD](https://github.com/kwaa) & [Hubert Chen](https://github.com/interstellar750) | Demo - [Hubert's Blog](https://trle5.xyz/about/testagain/)
+#### Made by [藍+85CD](https://github.com/kwaa) & [Hubert Chen](https://github.com/interstellar750) | Demo - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
 
 <details>
   <summary>Configuration</summary>
   
-  **⚠ This extension is not yet included in Urara, you need to download the component manually.**
-
-  Download the [**spotify.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/spotify/spotify.svelte) file and put it in the `src/lib/components/extra/` directory.
+  **✅ This extension is included in Urara, no additional download is needed.**
 
   #### Components to be imported before use:
 
@@ -119,18 +117,18 @@ It is people like you who bring extension plugins to this project, and the follo
   #### Usage:
 
   ```md
-  <Spotify type="album" id="0vXB2JFdOphGK7ybYLXSRI"/>
+  <Spotify type="track" id="6pCXYUR3mBfXY8s0FYcZqQ"/>
   ```
 
-  This extension will be displayed within your article [https://open.spotify.com/<u>**album**</u>/<u>**0vXB2JFdOphGK7ybYLXSRI**</u>](https://open.spotify.com/album/0vXB2JFdOphGK7ybYLXSRI) album, you can replace **album** with other playlist types and **0vXB2JFdOphGK7ybYLXSRI** with other Spotify playlist ID as needed.
+  This extension will be displayed within your article [https://open.spotify.com/<u>**track**</u>/<u>**6pCXYUR3mBfXY8s0FYcZqQ**</u>](https://open.spotify.com/track/6pCXYUR3mBfXY8s0FYcZqQ) track, you can replace **track** with other playlist types and **6pCXYUR3mBfXY8s0FYcZqQ** with other Spotify playlist ID as needed.
 
-  This expansion presets the default theme, size and width styles, which are defined by default as `theme={true}`, `compact={false}` and `width="100%"`, or you can manually adjust:
+  This expansion presets the default type, theme, size and width styles, which are defined by default as `type="track"`, `theme={true}`, `compact={false}` and `width="100%"`, or you can manually adjust:
 
   ```md
-  <Spotify type="album" id="0vXB2JFdOphGK7ybYLXSRI" theme={false} compact={true} width="95%"/>
+  <Spotify type="track" id="6pCXYUR3mBfXY8s0FYcZqQ" theme={false} compact={true} width="95%"/>
   ```
 
-  You can also refer to the use case source code: [**hexo_s/+page.svelte.md at urara · Interstellar750/hexo_s**](https://github.com/Interstellar750/hexo_s/blob/urara/urara/about/testagain/+page.svelte.md?plain=1#L46).
+  You can also refer to the use case source code: [**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139).
 
 </details>
 
