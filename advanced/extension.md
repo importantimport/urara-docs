@@ -132,6 +132,58 @@ It is people like you who bring extension plugins to this project, and the follo
 
 </details>
 
+### SoundCloud
+
+#### Made by [藍+85CD](https://github.com/kwaa) | Demo - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
+
+<details>
+  <summary>Configuration</summary>
+  
+  **✅ This extension is included in Urara, no additional download is needed.**
+
+  #### Components to be imported before use:
+
+  ```md
+  <script lang="ts">
+    import SoundCloud from '$lib/components/extra/soundcloud.svelte'
+  </script>
+  ```
+
+  #### Usage:
+
+  ```md
+  <SoundCloud type="playlist" id="1259265289" />
+  ```
+
+  This extension will display the [**sweety glitch Remix Contest Winners**](https://soundcloud.com/hatsunemikuofficial/sets/sweety-glitch-remix-contest) playlist within your post. Since SoundCloud does not display the playlist ID in the address bar, you will need to manually click share and then select embed, which will include the playlist ID in the embed code.
+  
+  Here is part of the formatted SoundCloud embed code, you can see a string of numbers in the highlighted line, that is the ID:
+
+  ```md {11}
+  <iframe 
+    width="100%" 
+    height="450" 
+    scrolling="no" 
+    frameborder="no" 
+    allow="autoplay" 
+    src="
+      https://w.soundcloud.com/player/?url=
+      https%3A//api.soundcloud.com/playlists/
+      1259265289
+      &color=%2322ecf1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+  </iframe>
+  ```
+
+  This extension presets the default type, cover style, color, autoplay and width styles, which are defined by default as `type="track"`, `visual={true}`, `color='ff5500'`, `autoplay={false}` and `width="100%"`, or you can adjust them manually:
+
+  ```md
+  <SoundCloud type="playlist" id="1259265289" visual={false} color="5b99ba" autoplay={true} width="95%"/>
+  ```
+
+  You can also refer to the use case source code: [**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139).
+
+</details>
+
 ## Comment System
 
 ### Giscus

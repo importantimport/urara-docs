@@ -132,6 +132,58 @@
 
 </details>
 
+### SoundCloud
+
+#### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
+
+<details>
+  <summary>配置</summary>
+  
+  **✅ 此拓展已包含在 Urara 中，無需額外下載。**
+
+  #### 在使用前需導入組件：
+
+  ```md
+  <script lang="ts">
+    import SoundCloud from '$lib/components/extra/soundcloud.svelte'
+  </script>
+  ```
+
+  #### 使用方法：
+
+  ```md
+  <SoundCloud type="playlist" id="1259265289" />
+  ```
+
+  此拓展會在您的文章內展示 [**sweety glitch Remix Contest Winners**](https://soundcloud.com/hatsunemikuofficial/sets/sweety-glitch-remix-contest) 播放清單，由於 SoundCloud 不會在地址欄展示播放清單 ID，您需要手動點擊分享，再選擇嵌入，嵌入程式碼中會包含播放清單 ID。
+  
+  以下是部分經過格式化的 SoundCloud 嵌入程式碼，您可以在高亮行看到一串數位，那就是 ID：
+
+  ```md {11}
+  <iframe 
+    width="100%" 
+    height="450" 
+    scrolling="no" 
+    frameborder="no" 
+    allow="autoplay" 
+    src="
+      https://w.soundcloud.com/player/?url=
+      https%3A//api.soundcloud.com/playlists/
+      1259265289
+      &color=%2322ecf1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+  </iframe>
+  ```
+
+  此拓展預設了默認的類型、封面樣式、顏色、自動播放和寬度風格，它們被默認定義為 `type="track"`、 `visual={true}`、 `color='ff5500'`、 `autoplay={false}` 和 `width="100%"`，您也可以進行手動調整：
+
+  ```md
+  <SoundCloud type="playlist" id="1259265289" visual={false} color="5b99ba" autoplay={true} width="95%"/>
+  ```
+
+  您還可以參考使用例源碼：[**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139)。
+
+</details>
+
 ## 評論系統
 
 ### Giscus
