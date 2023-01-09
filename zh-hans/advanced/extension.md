@@ -122,7 +122,7 @@
 
   此拓展会在您的文章内展示 [https://open.spotify.com/<u>**track**</u>/<u>**6pCXYUR3mBfXY8s0FYcZqQ**</u>](https://open.spotify.com/track/6pCXYUR3mBfXY8s0FYcZqQ) 曲目，您可以根据需要把 **track** 替换为其他的播放清单类型，把 **6pCXYUR3mBfXY8s0FYcZqQ** 替换为其他的 Spotify 播放清单 ID。
 
-  此拓展预设了默认的类型、颜色、大小和宽度风格，它们被默认定义为 `type="track"`、 `theme={true}`、 `compact={false}` 和 ``width="100%"``，您也可以进行手动调整：
+  此拓展预设了默认的类型、颜色、大小和宽度风格，它们被默认定义为 `type="track"`、 `theme={true}`、 `compact={false}` 和 `width="100%"`，您也可以进行手动调整：
 
   ```md
   <Spotify type="track" id="6pCXYUR3mBfXY8s0FYcZqQ" theme={false} compact={true} width="95%"/>
