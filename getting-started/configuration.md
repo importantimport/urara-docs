@@ -1,6 +1,6 @@
 # Configuration
 
-## Config files
+## Config Files
 
 This project uses `/src/lib/config/` as the config file directory, but most configurations do not need to be modified in general.
 

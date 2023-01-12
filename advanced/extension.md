@@ -2,7 +2,7 @@
 
 It is people like you who bring extension plugins to this project, and the following lists the extensions that have been included in this document.
 
-## Article component
+## Article Components
 
 ### YouTube
 
@@ -295,7 +295,7 @@ It is people like you who bring extension plugins to this project, and the follo
 
 </details>
 
-## Interface components
+## Interface Components
 
 ### Action Buttons
 
