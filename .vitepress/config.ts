@@ -24,6 +24,10 @@ const sidebar = (lang, index) => [
         link: lang + 'getting-started/configuration',
       },
       {
+        text: ['Writing', '寫作', '文章を書く', '写作'][index],
+        link: lang + 'getting-started/writing',
+      },
+      {
         text: ['Deploy', '部署', '配備', '部署'][index],
         link: lang + 'getting-started/deploy',
       },
