@@ -24,6 +24,20 @@ export const site: SiteConfig = {
 }
 ```
 
+### icon.ts | 圖示
+
+默認提供一些圖示以兼容 Web app manifests 及現代瀏覽器，可以自行替換。
+
+```text
+/urara/favicon.png - 網站圖示，32x32
+/urara/assets/any@180.png - 網站圖示，180x180
+/urara/assets/any@192.png - 網站 / Manifest 圖示，192x192
+/urara/assets/any@512.png - Manifest 圖示，512x512
+/urara/assets/manifest@192.png - Manifest 遮罩圖示，192x192
+/urara/assets/manifest@512.png - Manifest 遮罩圖示，512x512
+```
+
+也可以通過修改 `/src/lib/config/icon.ts` 替換圖示數量及路徑。
 
 ### general.ts | 主題
 
@@ -114,18 +128,3 @@ export const date: DateConfig = {
 ```
 
 要添加更多選項，請參考 [Intl.DateTimeFormat - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)。
-
-### icon.ts | 圖示
-
-默認提供一些圖示以兼容 Web app manifests 及現代瀏覽器，可以自行替換。
-
-```text
-/urara/favicon.png - 網站圖示，32x32
-/urara/assets/any@180.png - 網站圖示，180x180
-/urara/assets/any@192.png - 網站 / Manifest 圖示，192x192
-/urara/assets/any@512.png - Manifest 圖示，512x512
-/urara/assets/manifest@192.png - Manifest 遮罩圖示，192x192
-/urara/assets/manifest@512.png - Manifest 遮罩圖示，512x512
-```
-
-也可以通過修改 `/src/lib/config/icon.ts` 替換圖示數量及路徑。

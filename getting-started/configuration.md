@@ -24,6 +24,21 @@ export const site: SiteConfig = {
 }
 ```
 
+### icon.ts | Icons
+
+Some icons are provided by default to be compatible with web app manifests and modern browsers, and can be replaced by yourself.
+
+```text
+/urara/favicon.png - Website icon, 32x32
+/urara/assets/any@180.png - Website icon, 180x180
+/urara/assets/any@192.png - Website/Manifest icon, 192x192
+/urara/assets/any@512.png - Manifest icon, 512x512
+/urara/assets/manifest@192.png - Manifest mask icon, 192x192
+/urara/assets/manifest@512.png - Manifest mask icon, 512x512
+```
+
+You can also replace the number of icons and their paths by modifying `/src/lib/config/icon.ts`.
+
 ### general.ts | Theme
 
 ```ts
@@ -114,18 +129,3 @@ export const date: DateConfig = {
 ```
 
 For more additonal, see [Intl.DateTimeFormat - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat).
-
-### icon.ts | Icons
-
-Some icons are provided by default to be compatible with web app manifests and modern browsers, and can be replaced by yourself.
-
-```text
-/urara/favicon.png - Website icon, 32x32
-/urara/assets/any@180.png - Website icon, 180x180
-/urara/assets/any@192.png - Website/Manifest icon, 192x192
-/urara/assets/any@512.png - Manifest icon, 512x512
-/urara/assets/manifest@192.png - Manifest mask icon, 192x192
-/urara/assets/manifest@512.png - Manifest mask icon, 512x512
-```
-
-You can also replace the number of icons and their paths by modifying `/src/lib/config/icon.ts`.
