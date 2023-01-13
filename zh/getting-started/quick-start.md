@@ -4,7 +4,7 @@
 
 你可以在 GitHub 使用此模板而無需下載到本地。
 
-訪問 [importantimport/urara](https://github.com/importantimport/urara) 存儲庫，并點擊下面的 GitHub, Vercel 或 Netlify 部署按鈕。
+訪問 [**importantimport/urara**](https://github.com/importantimport/urara) 存儲庫，并點擊下面的 GitHub, Vercel 或 Netlify 部署按鈕。
 
 ## 本地下載
 
@@ -16,13 +16,13 @@
 node --version
 ```
 
-如果你的電腦未安裝 Node.js，則需要[下載並完成安裝](https://nodejs.org/zh-tw/download)。
+如果你的電腦未安裝 Node.js，則需要[**下載並完成安裝**](https://nodejs.org/zh-tw/download)。
 
 > 對於 Windows 用戶：請確保勾選 **Add to PATH** 選項（默認已勾選）
 
 ### pnpm
 
-本項目默認使用 [pnpm](https://pnpm.io/zh) 包管理器。
+本項目默認使用 [**pnpm**](https://pnpm.io/zh) 包管理器。
 
 通過 npm 安裝：
 
@@ -30,7 +30,7 @@ node --version
 npm i -g pnpm
 ```
 
-其他安裝方式請參考[官方文檔](https://pnpm.io/zh/installation)。
+其他安裝方式請參考[**官方文檔**](https://pnpm.io/zh/installation)。
 
 ### degit
 

@@ -4,7 +4,7 @@
 
 You can use this template on GitHub without downloading it locally.
 
-Visit the [importantimport/urara](https://github.com/importantimport/urara) repository and click the GitHub, Vercel, or Netlify deploy button below.
+Visit the [**importantimport/urara**](https://github.com/importantimport/urara) repository and click the GitHub, Vercel, or Netlify deploy button below.
 
 ## Local Downloads
 
@@ -16,13 +16,13 @@ You must check that Node.js is installed on your computer before downloading.
 node --version
 ```
 
-If your computer does not have Node.js installed, you will need to [download and complete the installation](https://nodejs.org/zh-tw/download).
+If your computer does not have Node.js installed, you will need to [**download and complete the installation**](https://nodejs.org/zh-tw/download).
 
 > For Windows users: make sure the **Add to PATH** option is checked (checked by default)
 
 ### pnpm
 
-This item uses the [pnpm](https://pnpm.io/zh) package manager by default.
+This item uses the [**pnpm**](https://pnpm.io/zh) package manager by default.
 
 Installed via npm.
 
@@ -30,7 +30,7 @@ Installed via npm.
 npm i -g pnpm
 ```
 
-For other installation methods, please refer to the [official documentation](https://pnpm.io/zh/installation).
+For other installation methods, please refer to the [**official documentation**](https://pnpm.io/zh/installation).
 
 ### degit
 

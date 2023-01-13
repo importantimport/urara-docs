@@ -54,7 +54,7 @@ export const theme: ThemeConfig = [
 ]
 ```
 
-This project uses the [daisyUI](https://daisyui.com/) theme, see the availble [daisyUI themes](https://daisyui.com/docs/themes/?lang=en).
+This project uses the [**daisyUI**](https://daisyui.com/) theme, see the availble [**daisyUI themes**](https://daisyui.com/docs/themes/?lang=en).
 
 ### general.ts | Header
 
@@ -128,4 +128,4 @@ export const date: DateConfig = {
 }
 ```
 
-For more additonal, see [Intl.DateTimeFormat - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat).
+For more additonal, see [**Intl.DateTimeFormat - JavaScript | MDN**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat).

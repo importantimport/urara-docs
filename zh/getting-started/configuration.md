@@ -54,7 +54,7 @@ export const theme: ThemeConfig = [
 ]
 ```
 
-本項目使用了 [daisyUI](https://daisyui.com/) 主題，查看可用的 [daisyUI 主題](https://daisyui.com/docs/themes/?lang=zh_tw)。
+本項目使用了 [**daisyUI**](https://daisyui.com/) 主題，查看可用的 [**daisyUI 主題**](https://daisyui.com/docs/themes/?lang=zh_tw)。
 
 ### general.ts | 標題欄
 
@@ -127,4 +127,4 @@ export const date: DateConfig = {
 }
 ```
 
-要添加更多選項，請參考 [Intl.DateTimeFormat - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)。
+要添加更多選項，請參考 [**Intl.DateTimeFormat - JavaScript | MDN**](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)。
