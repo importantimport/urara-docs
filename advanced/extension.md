@@ -159,7 +159,7 @@ It is people like you who bring extension plugins to this project, and the follo
   
   Here is part of the formatted SoundCloud embed code, you can see a string of numbers in the highlighted line, that is the ID:
 
-  ```md {11}
+  ```md {10}
   <iframe 
     width="100%" 
     height="450" 
@@ -174,7 +174,7 @@ It is people like you who bring extension plugins to this project, and the follo
   </iframe>
   ```
 
-  This extension presets the default type, cover style, color, autoplay and width styles, which are defined by default as `type="track"`, `visual={true}`, `color='ff5500'`, `autoplay={false}` and `width="100%"`, or you can adjust them manually:
+  This extension presets the default type, cover style, color, autoplay and width styles, which are defined by default as `type="track"`, `visual={true}`, `color='#ff5500'`, `autoplay={false}` and `width="100%"`, or you can adjust them manually:
 
   ```md
   <SoundCloud type="playlist" id="1259265289" visual={false} color="5b99ba" autoplay={true} width="95%"/>

@@ -159,7 +159,7 @@
   
   以下是部分經過格式化的 SoundCloud 嵌入程式碼，您可以在高亮行看到一串數位，那就是 ID：
 
-  ```md {11}
+  ```md {10}
   <iframe 
     width="100%" 
     height="450" 
@@ -174,7 +174,7 @@
   </iframe>
   ```
 
-  此拓展預設了默認的類型、封面樣式、顏色、自動播放和寬度風格，它們被默認定義為 `type="track"`、 `visual={true}`、 `color='ff5500'`、 `autoplay={false}` 和 `width="100%"`，您也可以進行手動調整：
+  此拓展預設了默認的類型、封面樣式、顏色、自動播放和寬度風格，它們被默認定義為 `type="track"`、 `visual={true}`、 `color='#ff5500'`、 `autoplay={false}` 和 `width="100%"`，您也可以進行手動調整：
 
   ```md
   <SoundCloud type="playlist" id="1259265289" visual={false} color="5b99ba" autoplay={true} width="95%"/>
