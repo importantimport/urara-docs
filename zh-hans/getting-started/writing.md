@@ -90,16 +90,21 @@ flags: // 自定义标记
 
 您可以通过 Markdown 语法或 HTML 代码在文章中插入媒体内容。
 
-若您要插入的媒体与文章的 `.md` 文件存放在同一目录内，引用时，可以使用简短的方式插入：
+当插入媒体时，需要注意存放媒体的目录，例如您想在下方的 `hello-world` 文章中插入 `urara.webp`：
 
-```md
-![photo](./photo.jpg)
+```text {5}
+.
+├── src
+└── urara
+    └── hello-world
+        ├── urara.webp
+        └── +page.svelte.md
 ```
 
-若想插入其他目录下的媒体，则需要填写完整目录：
+填写路径时，请从项目中的 `urara` 目录开始计算文件路径：
 
 ```md
-![photo](/article/photo.jpg)
+![图片描述](/hello-world/urara.webp)
 ```
 
 ## Svelte 组件

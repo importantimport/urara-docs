@@ -90,16 +90,21 @@ This project is also compatible with some of Markdown's extended syntax: [**Exte
 
 You can insert media content into your article via Markdown syntax or HTML code.
 
-If the media you want to insert is stored in the same directory as the article's `.md` file, when referencing it, you can use the short form to insert:
+When inserting media, pay attention to the directory where the media is stored, for example, to insert `urara.webp` in the following `hello-world` article:
 
-```md
-![photo](./photo.jpg)
+```text {5}
+.
+├── src
+└── urara
+    └── hello-world
+        ├── urara.webp
+        └── +page.svelte.md
 ```
 
-If you want to insert media from other directories, you need to fill in the complete directory:
+When filling in the path, calculate the file path starting from the `urara` directory in the project:
 
 ```md
-![photo](/article/photo.jpg)
+![image description](/hello-world/urara.webp)
 ```
 
 ## Svelte Components
