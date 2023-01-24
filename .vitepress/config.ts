@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
 
 const nav = (_lang, index) => [
   {
@@ -65,37 +66,76 @@ const themeConfig = (lang, index) => ({
   ],
 })
 
-export default defineConfig({
-  title: 'Urara Docs',
-  head: [
-    [
-      'link',
-      { rel: 'icon', href: '/favicon.png', sizes: '32x32', type: 'image/png' },
+export default withPwa(
+  defineConfig({
+    title: 'Urara Docs',
+    head: [
+      [
+        'link',
+        {
+          rel: 'icon',
+          href: '/favicon.png',
+          sizes: '32x32',
+          type: 'image/png',
+        },
+      ],
     ],
-  ],
-  description: 'Sweet & Powerful SvelteKit Blog Template.',
-  markdown: { lineNumbers: true },
-  locales: {
-    root: {
-      lang: 'en-US',
-      label: 'English',
-      themeConfig: themeConfig('/', 0),
+    description: 'Sweet & Powerful SvelteKit Blog Template.',
+    markdown: { lineNumbers: true },
+    locales: {
+      root: {
+        lang: 'en-US',
+        label: 'English',
+        themeConfig: themeConfig('/', 0),
+      },
+      zh: {
+        lang: 'zh-TW',
+        label: '正體中文',
+        themeConfig: themeConfig('/zh/', 1),
+      },
+      // ja: { lang: 'ja-JP', label: '日本語', themeConfig: themeConfig('/ja/', 2) }
+      'zh-hans': {
+        lang: 'zh-Hans',
+        label: '简体中文',
+        themeConfig: themeConfig('/zh-hans/', 3),
+      },
     },
-    zh: {
-      lang: 'zh-TW',
-      label: '正體中文',
-      themeConfig: themeConfig('/zh/', 1),
+    themeConfig: {
+      socialLinks: [
+        { icon: 'github', link: 'https://github.com/importantimport/urara' },
+      ],
     },
-    // ja: { lang: 'ja-JP', label: '日本語', themeConfig: themeConfig('/ja/', 2) }
-    'zh-hans': {
-      lang: 'zh-Hans',
-      label: '简体中文',
-      themeConfig: themeConfig('/zh-hans/', 3),
+    pwa: {
+      manifest: {
+        name: 'Urara',
+        short_name: 'Urara',
+        description: 'Sweet & Powerful SvelteKit Blog Template.',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'assets/any@192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'assets/any@512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'assets/maskable@192.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+          {
+            src: 'assets/maskable@512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
     },
-  },
-  themeConfig: {
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/importantimport/urara' },
-    ],
-  },
-})
+  })
+)

@@ -13,7 +13,7 @@
   "bugs": "https://github.com/importantimport/urara-docs/issues",
   "homepage": "https://github.com/importantimport/urara-docs#readme",
   "devDependencies": {
-    "vite": "^4.0.4",
+    "@vite-pwa/vitepress": "^0.0.4",
     "vite-plugin-pwa": "^0.14.1",
     "vitepress": "1.0.0-alpha.40"
   }

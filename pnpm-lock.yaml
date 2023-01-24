@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  vite: ^4.0.4
+  '@vite-pwa/vitepress': ^0.0.4
   vite-plugin-pwa: ^0.14.1
   vitepress: 1.0.0-alpha.40
 
 devDependencies:
-  vite: 4.0.4
-  vite-plugin-pwa: 0.14.1_vite@4.0.4
+  '@vite-pwa/vitepress': 0.0.4_vite-plugin-pwa@0.14.1
+  vite-plugin-pwa: 0.14.1
   vitepress: 1.0.0-alpha.40
 
 packages:
@@ -1703,6 +1703,14 @@ packages:
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
     dev: true
 
+  /@vite-pwa/vitepress/0.0.4_vite-plugin-pwa@0.14.1:
+    resolution: {integrity: sha512-+uMmxOe8G5X+9zbeP7htVINv0MVn8tuaKEE96jHXmV4dRb5HJX9U8WbgSJ4QD8ezoeYABjPjagGWOV3l0DMrtw==}
+    peerDependencies:
+      vite-plugin-pwa: ^0.14.0
+    dependencies:
+      vite-plugin-pwa: 0.14.1
+    dev: true
+
   /@vitejs/plugin-vue/4.0.0_vite@4.0.4+vue@3.2.45:
     resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -3137,7 +3145,7 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /vite-plugin-pwa/0.14.1_vite@4.0.4:
+  /vite-plugin-pwa/0.14.1:
     resolution: {integrity: sha512-5zx7yhQ8RTLwV71+GA9YsQQ63ALKG8XXIMqRJDdZkR8ZYftFcRgnzM7wOWmQZ/DATspyhPih5wCdcZnAIsM+mA==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
@@ -3147,7 +3155,6 @@ packages:
       fast-glob: 3.2.12
       pretty-bytes: 6.0.0
       rollup: 3.10.1
-      vite: 4.0.4
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
