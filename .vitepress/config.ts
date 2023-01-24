@@ -79,6 +79,14 @@ export default withPwa(
           type: 'image/png',
         },
       ],
+      [
+        'script',
+        {
+          src: 'https://plausible.kwaa.dev/js/plausible.js',
+          defer: '',
+          'data-domain': 'urara-docs.netlify.app',
+        },
+      ],
     ],
     description: 'Sweet & Powerful SvelteKit Blog Template.',
     markdown: { lineNumbers: true },
