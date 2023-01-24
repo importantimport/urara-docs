@@ -1,23 +1,8 @@
 import { defineConfig } from 'vite'
-import Unocss from 'unocss/vite'
-import {
-  presetUno,
-  presetAttributify,
-  presetIcons,
-  presetWebFonts,
-} from 'unocss'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   plugins: [
-    Unocss({
-      presets: [
-        presetUno(),
-        presetAttributify(),
-        presetIcons(),
-        presetWebFonts(),
-      ],
-    }),
     VitePWA({
       manifest: {
         name: 'Urara',

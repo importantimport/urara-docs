@@ -13,7 +13,6 @@
   "bugs": "https://github.com/importantimport/urara-docs/issues",
   "homepage": "https://github.com/importantimport/urara-docs#readme",
   "devDependencies": {
-    "unocss": "^0.48.4",
     "vite": "^4.0.4",
     "vite-plugin-pwa": "^0.14.1",
     "vitepress": "1.0.0-alpha.40"
