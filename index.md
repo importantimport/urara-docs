@@ -1,4 +1,5 @@
 ---
+titleTemplate: false
 layout: home
 hero:
   name: Urara
