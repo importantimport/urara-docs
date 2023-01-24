@@ -1,14 +1,18 @@
 ---
-home: true
-heroImage: /assets/any@192.png
-heroAlt: Urara
-heroText: Urara
-tagline: 甜蜜且强大的 SvelteKit 網誌模板。
-actionText: 開始
-actionLink: /zh/getting-started/intro
+layout: home
+hero:
+  name: Urara
+  text: |
+    甜蜜且
+    强大的
+    SvelteKit
+    網誌模板
+  image: /assets/any@192.png
+  actions:
+    - theme: brand
+      text: 開始
+      link: /zh/getting-started/intro
+    - theme: alt
+      text: 在 GitHub 上查看
+      link: https://github.com/importantimport/urara
 ---
-
-```bash
-npx degit importantimport/urara my-blog && cd my-blog # 在名為 my-blog 的文件夾中新建項目
-pnpm i # 如果你沒有安裝 pnpm，請運行: npm i -g pnpm
-```

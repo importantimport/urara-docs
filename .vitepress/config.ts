@@ -10,13 +10,16 @@ const nav = (_lang, index) => [
 const sidebar = (lang, index) => [
   {
     text: ['Getting Started', '入門', 'はじめに', '入门'][index],
-    children: [
+    collapsible: true,
+    items: [
       {
         text: ['Intro', '介紹', '紹介', '介绍'][index],
         link: lang + 'getting-started/intro',
       },
       {
-        text: ['Quick Start', '快速開始', 'クイックスタート', '快速开始'][index],
+        text: ['Quick Start', '快速開始', 'クイックスタート', '快速开始'][
+          index
+        ],
         link: lang + 'getting-started/quick-start',
       },
       {
@@ -35,44 +38,35 @@ const sidebar = (lang, index) => [
   },
   {
     text: ['Advanced', '進階', '高度な', '进阶'][index],
-    children: [
+    collapsible: true,
+    items: [
       {
         text: ['Extension', '拓展', '拡張', '拓展'][index],
         link: lang + 'advanced/extension',
-      }
+      },
     ],
   },
 ]
 
-const locales = (lang, index) => ({
-  selectText: ['Languages', '語言', '言語', '语言'][index],
-  label: ['English', '正體中文', '日本語', '简体中文'][index],
-  editLinkText: [
-    'Edit on GitHub',
-    '在 GitHub 上編輯',
-    'GitHub でこのページを編集',
-	  '在 GitHub 上编辑',
-  ][index],
-  lastUpdated: ['Last Updated', '最後更新于', '最終更新', '最后更新于'][index],
-  nav: nav(lang, index),
+const themeConfig = (lang, index) => ({
   sidebar: sidebar(lang, index),
+  nav: nav(lang, index),
+  editLink: {
+    pattern: 'https://github.com/importantimport/urara-docs/edit/main/:path',
+    text: [
+      'Edit on GitHub',
+      '在 GitHub 上編輯',
+      'GitHub でこのページを編集',
+      '在 GitHub 上编辑',
+    ][index],
+  },
+  lastUpdatedText: ['Last Updated', '最後更新于', '最終更新', '最后更新于'][
+    index
+  ],
 })
 
-const themeConfig = {
-  locales: {
-    '/': locales('/', 0),
-    '/zh/': locales('/zh/', 1),
-    // '/ja/': locales('/ja/', 2),
-	'/zh-hans/': locales('/zh-hans/', 3),
-  },
-  editLinks: true,
-  repo: 'importantimport/urara-docs',
-  docsBranch: 'main',
-  author: '藍',
-}
-
 export default defineConfig({
-  title: 'Urara',
+  title: 'Urara Docs',
   head: [
     [
       'link',
@@ -80,14 +74,28 @@ export default defineConfig({
     ],
   ],
   description: 'Sweet & Powerful SvelteKit Blog Template.',
-  markdown: {
-    lineNumbers: true,
-  },
+  markdown: { lineNumbers: true },
   locales: {
-    '/': { lang: 'en-US' },
-    '/zh/': { lang: 'zh-TW' },
-    // '/ja/': { lang: 'ja-JP' }
-	'/zh-hans/': { lang: 'zh-Hans'},
+    root: {
+      lang: 'en-US',
+      label: 'English',
+      themeConfig: themeConfig('/', 0),
+    },
+    zh: {
+      lang: 'zh-TW',
+      label: '正體中文',
+      themeConfig: themeConfig('/zh/', 1),
+    },
+    // ja: { lang: 'ja-JP', label: '日本語', themeConfig: themeConfig('/ja/', 2) }
+    'zh-hans': {
+      lang: 'zh-Hans',
+      label: '简体中文',
+      themeConfig: themeConfig('/zh-hans/', 3),
+    },
   },
-  themeConfig: themeConfig,
+  themeConfig: {
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/importantimport/urara' },
+    ],
+  },
 })

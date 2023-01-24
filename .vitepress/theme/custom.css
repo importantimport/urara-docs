@@ -1,4 +1,26 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Fira Code */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&display=swap');
+/* Noto Colr Emoji Glyf */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Colr+Emoji+Glyf&display=swap');
+
 :root {
-  --c-brand: #e96d7c !important;
-  --c-brand-light: #e24053 !important;
+  --vp-home-hero-name-color: var(--vp-c-brand);
+  --vp-c-brand: #f43f5e !important; /* tailwind rose 500 */
+  --vp-c-brand-light: #fb7185 !important;
+  --vp-c-brand-lighter: #fda4af !important;
+  --vp-c-brand-dark: #e11d48 !important;
+  --vp-c-brand-darker: #be123c !important;
+  --vp-font-family-base: 'Poppins', ui-sans-serif, system-ui, -apple-system,
+    sans-serif, 'Noto Colr Emoji Glyf', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --vp-font-family-mono: 'Fira Code', ui-monospace, monospace,
+    'Noto Colr Emoji Glyf', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+::selection {
+  background: var(--vp-c-brand);
+  color: var(--vp-c-black);
 }
