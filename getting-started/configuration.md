@@ -120,10 +120,10 @@ export const footer: FooterConfig = {
 export const date: DateConfig = {
   locales: 'en-US', // Language,refer to IETF language tag
   options: {
-    year: '2-digit', // Year: `numeric`, `2-digit
-    weekday: 'long', // Week: `narrow`, `short`, `long`
-    month: 'short', // Month: `numeric`, `2-digit`, `narrow`, `short`, `long`
-    day: 'numeric' // day: `numeric`, `2-digit`
+    year: '2-digit', // Year: numeric / 2-digit
+    weekday: 'long', // Week: narrow / short / long
+    month: 'short', // Month: numeric / 2-digit / narrow / short / long
+    day: 'numeric' // day: numeric / 2-digit
   }
 }
 ```

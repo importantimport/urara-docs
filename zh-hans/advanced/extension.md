@@ -225,14 +225,14 @@
   export const post: PostConfig = {
     comment: {
       use: ['Giscus', '其他评论系统'],
-      style: 'boxed', // 评论系统栏样式：none / bordered / lifted / boxed
+      style: 'boxed', // 评论系统栏样式: none / bordered / lifted / boxed
       giscus: {
         repo: '[在此输入仓库]',
         repoID: '[在此输入仓库 ID]',
         category: '[在此输入分类名]',
         categoryID: '[在此输入分类 ID]',
-        reactionsEnabled: true, // 表情回应：true / false
-        inputPosition: 'top' // 评论框位置：top / bottom
+        reactionsEnabled: true, // 表情回应: true / false
+        inputPosition: 'top' // 评论框位置: top / bottom
         lang: 'zh-CN', // 语言
         theme: 'preferred_color_scheme' // 主题
       }
@@ -279,7 +279,7 @@
   export const post: PostConfig = {
     comment: {
       use: ['Utterances', '其他评论系统'],
-      style: 'boxed', // 评论系统栏样式：none / bordered / lifted / boxed
+      style: 'boxed', // 评论系统栏样式: none / bordered / lifted / boxed
       utterances: {
         repo: '[在此输入仓库]',
         lable: '', // 标签
@@ -354,7 +354,7 @@
   export const friends: Friend[] = [
     {
       id: 'id', // HTML ID
-      rel: 'friend', // 联系人类型：contact / acquaintance / friend
+      rel: 'friend', // 联系人类型: contact / acquaintance / friend
       name: 'Name', // 朋友昵称
       title: 'Title', // 标题
       avatar: '/favicon.png', // 朋友图片

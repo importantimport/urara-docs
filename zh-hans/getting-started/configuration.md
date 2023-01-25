@@ -120,10 +120,10 @@ export const footer: FooterConfig = {
 export const date: DateConfig = {
   locales: 'en-US', // 语言，可参考 IETF 语言标签
   options: {
-    year: '2-digit', // 年份: `numeric`, `2-digit`
-    weekday: 'long', // 星期: `narrow`, `short`, `long`
-    month: 'short', // 月份: `numeric, `2-digit, `narrow`, `short`, `long`
-    day: 'numeric' // 日期: `numeric`, `2-digit`
+    year: '2-digit', // 年份: numeric / 2-digit
+    weekday: 'long', // 星期: narrow / short / long
+    month: 'short', // 月份: numeric / 2-digit / narrow / short / long
+    day: 'numeric' // 日期: numeric / 2-digit
   }
 }
 ```
