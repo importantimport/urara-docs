@@ -215,7 +215,7 @@
 
   您可以将上方的 `https://github.com/example` 替换为您的 GitHub 帐号链接，要使用其他验证方式请参考：[**IndieAuth Documentation - Sign in with your domain name**](https://indieauth.com/setup)。
 
-  接下来，还需要根据需求修改 `src/config/post.ts` 文件：
+  接下来，还需要根据需求修改 `src/lib/config/post.ts` 文件：
 
   ```ts
   import type { PostConfig } from '$lib/types/post'
@@ -274,7 +274,7 @@
   </script>
   ```
 
-  接下来，您需要根据需求修改 `src/config/post.ts` 文件：
+  接下来，您需要根据需求修改 `src/lib/config/post.ts` 文件：
 
   ```ts
   import type { PostConfig } from '$lib/types/post'
@@ -328,7 +328,7 @@
   </script>
   ```
 
-  接下来，您需要根据需求修改 `src/config/post.ts` 文件：
+  接下来，您需要根据需求修改 `src/lib/config/post.ts` 文件：
 
   ```ts
   import type { PostConfig } from '$lib/types/post'

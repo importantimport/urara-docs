@@ -215,7 +215,7 @@
 
   您可以將上方的 `https://github.com/example` 替換為您的 GitHub 帳號連結，要使用其他驗證方式請參考：[**IndieAuth Documentation - Sign in with your domain name**](https://indieauth.com/setup)。
 
-  接下來，還需要根據需求修改 `src/config/post.ts` 文件：
+  接下來，還需要根據需求修改 `src/lib/config/post.ts` 文件：
 
   ```ts
   import type { PostConfig } from '$lib/types/post'
@@ -274,7 +274,7 @@
   </script>
   ```
 
-  接下來，您需要根據需求修改 `src/config/post.ts` 文件：
+  接下來，您需要根據需求修改 `src/lib/config/post.ts` 文件：
 
   ```ts
   import type { PostConfig } from '$lib/types/post'
@@ -328,7 +328,7 @@
   </script>
   ```
 
-  接下來，您需要根據需求修改 `src/config/post.ts` 文件：
+  接下來，您需要根據需求修改 `src/lib/config/post.ts` 文件：
 
   ```ts
   import type { PostConfig } from '$lib/types/post'

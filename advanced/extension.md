@@ -215,7 +215,7 @@ It is people like you who bring extension plugins to this project, and the follo
 
   You can replace the `https://github.com/example` above with a link to your GitHub account. To use other authentication methods see: [**IndieAuth Documentation - Sign in with your domain name**](https:// indieauth.com/setup).
 
-  Next, the ``src/config/post.ts`` file needs to be modified as required:
+  Next, the ``src/lib/config/post.ts`` file needs to be modified as required:
 
   ```ts
   import type { PostConfig } from '$lib/types/post'
@@ -274,7 +274,7 @@ It is people like you who bring extension plugins to this project, and the follo
   </script>
   ```
 
-  Next, you will need to modify the `src/config/post.ts` file as required:
+  Next, you will need to modify the `src/lib/config/post.ts` file as required:
 
   ```ts
   import type { PostConfig } from '$lib/types/post'
@@ -328,7 +328,7 @@ It is people like you who bring extension plugins to this project, and the follo
   </script>
   ```
 
-  Next, you will need to modify the `src/config/post.ts` file as required:
+  Next, you will need to modify the `src/lib/config/post.ts` file as required:
 
   ```ts
   import type { PostConfig } from '$lib/types/post'
