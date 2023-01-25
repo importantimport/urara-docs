@@ -186,6 +186,63 @@
 
 ## 評論系統
 
+### Webmention
+
+#### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [./kwaa.dev](https://kwaa.dev/intro-urara#post-comment)
+
+<details>
+  <summary>配置</summary>
+  
+  **✅ 此拓展已包含在 Urara 中，無需額外下載。**
+
+  #### 使用方法：
+
+  首先需要在 `src/lib/config/general.ts` 中添加 IndieAuth 内容：
+
+  ```ts
+  export const head: HeadConfig = {
+    custom: ({ dev, post, page }) =>
+      dev
+        ? []
+        : [
+            // IndieAuth
+            '<link rel="authorization_endpoint" href="https://indieauth.com/auth">',
+            '<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
+          ],
+    me: ['https://github.com/example']
+  }
+  ```
+
+  您可以將上方的 `https://github.com/example` 替換為您的 GitHub 帳號連結，要使用其他驗證方式請參考：[**IndieAuth Documentation - Sign in with your domain name**](https://indieauth.com/setup)。
+
+  接下來，還需要根據需求修改 `src/config/post.ts` 文件：
+
+  ```ts
+  import type { PostConfig } from '$lib/types/post'
+
+  export const post: PostConfig = {
+    comment: {
+      use: ['Webmention', '其他評論系統'],
+      style: 'boxed', // 評論系統欄樣式: none / bordered / lifted / boxed
+      webmention: {
+        username: '[在此輸入域名]',
+        sortBy: 'created', // 排序方式: created / updated
+        sortDir: 'down', // 排序順序: up / down
+        form: true, // 啟用評論: true / false
+        commentParade: true // 啟用匿名評論: true / false
+      }
+    }
+  }
+  ```
+
+  在此之後，您可以使用設定的域名來登入 [**Webmention.io**](https://webmention.io/)，通過驗證後，您可以查看最近的 Webmentions。
+
+  配置完成後，Webmention 既可使用，將顯示在文章末尾後。
+
+  您還可以參考使用例源碼：[**blog/post.ts at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/src/lib/config/post.ts#L10)。
+
+</details>
+
 ### Giscus
 
 #### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [./kwaa.dev](https://kwaa.dev/intro-urara#post-comment)

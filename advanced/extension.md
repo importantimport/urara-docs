@@ -186,6 +186,63 @@ It is people like you who bring extension plugins to this project, and the follo
 
 ## Comment System
 
+### Webmention
+
+#### Made by [藍+85CD](https://github.com/kwaa) | Demo - [./kwaa.dev](https://kwaa.dev/intro-urara#post-comment)
+
+<details>
+  <summary>Configuration</summary>
+  
+  **✅ This extension is included in Urara, no additional download is needed.**
+
+  #### Usage:
+
+  First you need to add the IndieAuth attribute to ``src/lib/config/general.ts``.
+
+  ```ts
+  export const head: HeadConfig = {
+    custom: ({ dev, post, page }) =>
+      dev
+        ? []
+        : [
+            // IndieAuth
+            '<link rel="authorization_endpoint" href="https://indieauth.com/auth">',
+            '<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
+          ],
+    me: ['https://github.com/example']
+  }
+  ```
+
+  You can replace the `https://github.com/example` above with a link to your GitHub account. To use other authentication methods see: [**IndieAuth Documentation - Sign in with your domain name**](https:// indieauth.com/setup).
+
+  Next, the ``src/config/post.ts`` file needs to be modified as required:
+
+  ```ts
+  import type { PostConfig } from '$lib/types/post'
+
+  export const post: PostConfig = {
+    comment: {
+      use: ['Webmention', 'other comment systems'],
+      style: 'boxed', // comment system bar styles: none / bordered / lifted / boxed
+      webmention: {
+        username: '[enter domain here]',
+        sortBy: 'created', // sort by: created / updated
+        sortDir: 'down', // sort order: up / down
+        form: true, // enable comments: true / false
+        commentParade: true // enable anonymous comments: true / false
+      }
+    }
+  }
+  ```
+
+  After this, you can log in to [**Webmention.io**](https://webmention.io/) with the set domain name, and after passing the authentication, you can view the recent Webmentions.
+
+  Once configured, Webmention is ready to use and will be displayed after the end of the article.
+
+  You can also refer to the use case source code: [**blog/post.ts at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/src/lib/config/post.ts#L10)。
+
+</details>
+
 ### Giscus
 
 #### Made by [藍+85CD](https://github.com/kwaa) | Demo - [./kwaa.dev](https://kwaa.dev/intro-urara#post-comment)
