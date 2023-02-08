@@ -184,6 +184,37 @@ It is people like you who bring extension plugins to this project, and the follo
 
 </details>
 
+### GitHub Repository
+
+#### Made by [藍+85CD](https://github.com/kwaa) | Demo - [./kwaa.dev](https://kwaa.dev/intro-urara#开源)
+
+<details>
+  <summary>Configuration</summary>
+  
+  **⚠ This extension is not yet included in Urara, you need to download the component manually.**
+
+  Download the [**github.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/github/github.svelte) file and put it in the `src/lib/components/extra/` directory.
+
+  #### Components to be imported before use:
+
+  ```md
+  <script>
+    import GitHub from '$lib/components/extra/github.svelte'
+  </script>
+  ```
+
+  #### Usage:
+
+  ```md
+  <GitHub user="importantimport" repo="urara"/>
+  ```
+
+  This extension will show the [https://github.com/<u>**importantimport/urara**</u>](https://github.com/importantimport/urara) repository within your post, and you can replace **importantimport** to another user or organization, and **urara** to a GitHub repository under that user's or organization's name.
+
+  You can also refer to the use case source code: [**blog/+page.svelte.md at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/urara/intro-urara/+page.svelte.md?plain=1#L280).
+
+</details>
+
 ## Comment System
 
 ### Webmention

@@ -184,6 +184,37 @@
 
 </details>
 
+### GitHub 仓库
+
+#### 由 [藍+85CD](https://github.com/kwaa) 制作 | 演示 - [./kwaa.dev](https://kwaa.dev/intro-urara#开源)
+
+<details>
+  <summary>配置</summary>
+  
+  **⚠ 此拓展尚未包含在 Urara 中，您需要手动下载组件。**
+
+  下载 [**github.svelte**](https://github.com/importantimport/urara-docs/raw/master/public/extension/github/github.svelte) 文件，将其放入 `src/lib/components/extra/` 目录内。
+
+  #### 在使用前需导入组件：
+
+  ```md
+  <script>
+    import GitHub from '$lib/components/extra/github.svelte'
+  </script>
+  ```
+
+  #### 使用方法：
+
+  ```md
+  <GitHub user="importantimport" repo="urara"/>
+  ```
+
+  此拓展会在您的文章内展示 [https://github.com/<u>**importantimport/urara**</u>](https://github.com/importantimport/urara) 仓库，您可以根据需要把 **importantimport** 替换为其他用户或组织，把 **urara** 替换为该用户或组织名下的 GitHub 仓库。
+
+  您还可以参考使用例源码：[**blog/+page.svelte.md at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/urara/intro-urara/+page.svelte.md?plain=1#L280)。
+
+</details>
+
 ## 评论系统
 
 ### Webmention
