@@ -28,7 +28,7 @@ export const site: SiteConfig = {
 
 默认提供一些图标以兼容 Web app manifests 及现代浏览器，可以自行替换。
 
-```text
+```
 /urara/favicon.png - 网站图标，32x32
 /urara/assets/any@180.png - 网站图标，180x180
 /urara/assets/any@192.png - 网站 / Manifest 图标，192x192

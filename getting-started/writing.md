@@ -4,7 +4,7 @@
 
 This project uses `/urara/` as the resource and article directory, and the initial structure looks like this:
 
-```text
+```
 .
 ├── assets
 │   ├── any@180.png

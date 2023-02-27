@@ -28,7 +28,7 @@ export const site: SiteConfig = {
 
 Some icons are provided by default to be compatible with web app manifests and modern browsers, and can be replaced by yourself.
 
-```text
+```
 /urara/favicon.png - Website icon, 32x32
 /urara/assets/any@180.png - Website icon, 180x180
 /urara/assets/any@192.png - Website/Manifest icon, 192x192
