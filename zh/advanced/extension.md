@@ -4,35 +4,6 @@
 
 ## 文章組件
 
-### YouTube
-
-#### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
-
-<details>
-  <summary>配置</summary>
-  
-  **✅ 此拓展已包含在 Urara 中，無需額外下載。**
-
-  #### 在使用前需導入組件：
-
-  ```md
-  <script>
-    import YouTube from '$lib/components/extra/youtube.svelte'
-  </script>
-  ```
-
-  #### 使用方法：
-
-  ```md
-  <YouTube id="WysuxO4yR04"/>
-  ```
-
-  此拓展會在您的文章內展示 [https://www.youtube.com/watch?v=<u>**WysuxO4yR04**</u>](https://www.youtube.com/watch?v=WysuxO4yR04) 視頻，您可以根據需要把 **WysuxO4yR04** 替換為其他的 YouTube 視頻 ID。
-
-  您還可以參考使用例源碼：[**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139)。
-
-</details>
-
 ### 資料卡片
 
 #### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [./kwaa.dev](https://kwaa.dev/about#关于我)
@@ -94,93 +65,6 @@
   您可以根據需要修改提示的狀態，可用的選項有：`info`、`success`、`warning` 和 `error`。
 
   您還可以參考使用例源碼：[**Urara-Blog/+page.svelte.md at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/urara/2022-12-20-pleroma-mod/+page.svelte.md?plain=1#L12)。
-
-</details>
-
-### Spotify
-
-#### 由 [藍+85CD](https://github.com/kwaa) & [Hubert Chen](https://github.com/interstellar750) 製作 | 演示 - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
-
-<details>
-  <summary>配置</summary>
-  
-  **✅ 此拓展已包含在 Urara 中，無需額外下載。**
-
-  #### 在使用前需導入組件：
-
-  ```md
-  <script lang="ts">
-    import Spotify from '$lib/components/extra/spotify.svelte'
-  </script>
-  ```
-
-  #### 使用方法：
-
-  ```md
-  <Spotify id="6pCXYUR3mBfXY8s0FYcZqQ"/>
-  ```
-
-  此拓展會在您的文章內展示 [https://open.spotify.com/<u>**track**</u>/<u>**6pCXYUR3mBfXY8s0FYcZqQ**</u>](https://open.spotify.com/track/6pCXYUR3mBfXY8s0FYcZqQ) 曲目，您可以根據需要把 **track** 替換為其他的播放清單類型，把 **6pCXYUR3mBfXY8s0FYcZqQ** 替換為其他的 Spotify 播放清單 ID。
-
-  此拓展預設了默認的類型、顏色、大小和寬度風格，它們被默認定義為 `type="track"`、 `theme={true}`、 `compact={false}` 和 `width="100%"`，您也可以進行手動調整：
-
-  ```md
-  <Spotify type="track" id="6pCXYUR3mBfXY8s0FYcZqQ" theme={false} compact={true} width="95%"/>
-  ```
-
-  您還可以參考使用例源碼：[**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139)。
-
-</details>
-
-### SoundCloud
-
-#### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
-
-<details>
-  <summary>配置</summary>
-  
-  **✅ 此拓展已包含在 Urara 中，無需額外下載。**
-
-  #### 在使用前需導入組件：
-
-  ```md
-  <script lang="ts">
-    import SoundCloud from '$lib/components/extra/soundcloud.svelte'
-  </script>
-  ```
-
-  #### 使用方法：
-
-  ```md
-  <SoundCloud type="playlist" id="1259265289" />
-  ```
-
-  此拓展會在您的文章內展示 [**sweety glitch Remix Contest Winners**](https://soundcloud.com/hatsunemikuofficial/sets/sweety-glitch-remix-contest) 播放清單，由於 SoundCloud 不會在地址欄展示播放清單 ID，您需要手動點擊分享，再選擇嵌入，嵌入程式碼中會包含播放清單 ID。
-  
-  以下是部分經過格式化的 SoundCloud 嵌入程式碼，您可以在高亮行看到一串數位，那就是 ID：
-
-  ```md {10}
-  <iframe 
-    width="100%" 
-    height="450" 
-    scrolling="no" 
-    frameborder="no" 
-    allow="autoplay" 
-    src="
-      https://w.soundcloud.com/player/?url=
-      https%3A//api.soundcloud.com/playlists/
-      1259265289
-      &color=%2322ecf1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-  </iframe>
-  ```
-
-  此拓展預設了默認的類型、封面樣式、顏色、自動播放和寬度風格，它們被默認定義為 `type="track"`、 `visual={true}`、 `color='#ff5500'`、 `autoplay={false}` 和 `width="100%"`，您也可以進行手動調整：
-
-  ```md
-  <SoundCloud type="playlist" id="1259265289" visual={false} color="5b99ba" autoplay={true} width="95%"/>
-  ```
-
-  您還可以參考使用例源碼：[**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139)。
 
 </details>
 

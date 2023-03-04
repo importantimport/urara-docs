@@ -4,35 +4,6 @@ It is people like you who bring extension plugins to this project, and the follo
 
 ## Article Components
 
-### YouTube
-
-#### Made by [藍+85CD](https://github.com/kwaa) | Demo - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
-
-<details>
-  <summary>Configuration</summary>
-  
-  **✅ This extension is included in Urara, no additional download is needed.**
-
-  #### Components to be imported before use:
-
-  ```md
-  <script>
-    import YouTube from '$lib/components/extra/youtube.svelte'
-  </script>
-  ```
-
-  #### Usage:
-
-  ```md
-  <YouTube id="WysuxO4yR04"/>
-  ```
-
-  This extension will show the [https://www.youtube.com/watch?v=<u>**WysuxO4yR04**</u>](https://www.youtube.com/watch?v=WysuxO4yR04) video within your post, and you can replace **WysuxO4yR04** to other YouTube video ID as needed.
-
-  You can also refer to the use case source code: [**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139).
-
-</details>
-
 ### Profile Card
 
 #### Made by [藍+85CD](https://github.com/kwaa) | Demo - [./kwaa.dev](https://kwaa.dev/about#关于我)
@@ -94,93 +65,6 @@ It is people like you who bring extension plugins to this project, and the follo
   You can modify the status of the prompt as needed. The available options are: `info`, `success`, `warning` and `error`.
 
   You can also refer to the use case source code: [**Urara-Blog/+page.svelte.md at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/urara/2022-12-20-pleroma-mod/+page.svelte.md?plain=1#L12).
-
-</details>
-
-### Spotify
-
-#### Made by [藍+85CD](https://github.com/kwaa) & [Hubert Chen](https://github.com/interstellar750) | Demo - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
-
-<details>
-  <summary>Configuration</summary>
-  
-  **✅ This extension is included in Urara, no additional download is needed.**
-
-  #### Components to be imported before use:
-
-  ```md
-  <script lang="ts">
-    import Spotify from '$lib/components/extra/spotify.svelte'
-  </script>
-  ```
-
-  #### Usage:
-
-  ```md
-  <Spotify type="track" id="6pCXYUR3mBfXY8s0FYcZqQ"/>
-  ```
-
-  This extension will be displayed within your article [https://open.spotify.com/<u>**track**</u>/<u>**6pCXYUR3mBfXY8s0FYcZqQ**</u>](https://open.spotify.com/track/6pCXYUR3mBfXY8s0FYcZqQ) track, you can replace **track** with other playlist types and **6pCXYUR3mBfXY8s0FYcZqQ** with other Spotify playlist ID as needed.
-
-  This expansion presets the default type, theme, size and width styles, which are defined by default as `type="track"`, `theme={true}`, `compact={false}` and `width="100%"`, or you can manually adjust:
-
-  ```md
-  <Spotify type="track" id="6pCXYUR3mBfXY8s0FYcZqQ" theme={false} compact={true} width="95%"/>
-  ```
-
-  You can also refer to the use case source code: [**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139).
-
-</details>
-
-### SoundCloud
-
-#### Made by [藍+85CD](https://github.com/kwaa) | Demo - [Urara](https://urara-demo.netlify.app/hello-world/elements#svelte-components)
-
-<details>
-  <summary>Configuration</summary>
-  
-  **✅ This extension is included in Urara, no additional download is needed.**
-
-  #### Components to be imported before use:
-
-  ```md
-  <script lang="ts">
-    import SoundCloud from '$lib/components/extra/soundcloud.svelte'
-  </script>
-  ```
-
-  #### Usage:
-
-  ```md
-  <SoundCloud type="playlist" id="1259265289" />
-  ```
-
-  This extension will display the [**sweety glitch Remix Contest Winners**](https://soundcloud.com/hatsunemikuofficial/sets/sweety-glitch-remix-contest) playlist within your post. Since SoundCloud does not display the playlist ID in the address bar, you will need to manually click share and then select embed, which will include the playlist ID in the embed code.
-  
-  Here is part of the formatted SoundCloud embed code, you can see a string of numbers in the highlighted line, that is the ID:
-
-  ```md {10}
-  <iframe 
-    width="100%" 
-    height="450" 
-    scrolling="no" 
-    frameborder="no" 
-    allow="autoplay" 
-    src="
-      https://w.soundcloud.com/player/?url=
-      https%3A//api.soundcloud.com/playlists/
-      1259265289
-      &color=%2322ecf1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-  </iframe>
-  ```
-
-  This extension presets the default type, cover style, color, autoplay and width styles, which are defined by default as `type="track"`, `visual={true}`, `color='#ff5500'`, `autoplay={false}` and `width="100%"`, or you can adjust them manually:
-
-  ```md
-  <SoundCloud type="playlist" id="1259265289" visual={false} color="5b99ba" autoplay={true} width="95%"/>
-  ```
-
-  You can also refer to the use case source code: [**urara/+page.svelte.md at main · importantimport/urara**](https://github.com/importantimport/urara/blob/main/urara/hello-world/elements/+page.svelte.md?plain=1#L139).
 
 </details>
 
