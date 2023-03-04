@@ -4,6 +4,36 @@
 
 ## 文章组件
 
+### 状态提示
+
+#### 由 [藍+85CD](https://github.com/kwaa) 制作 | 演示 - [Seviche.cc](https://seviche.cc/2022-12-20-pleroma-mod/)
+
+<details>
+  <summary>配置</summary>
+  
+  **✅ 此拓展已包含在 Urara 中，无需额外下载。**
+
+  #### 在使用前需导入组件：
+
+  ```md
+  <script>
+    import Alert from '$lib/components/extra/alert.svelte'
+  </script>
+  ```
+
+  #### 使用方法：
+
+  ```md
+  <Alert status="warning" description="警告信息" title="警告标题"/>
+  ```
+
+  您可以根据需要修改提示的状态，可用的选项有：`info`、`success`、`warning` 和 `error`。
+
+  您还可以参考使用例源码：[**Urara-Blog/+page.svelte.md at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/urara/2022-12-20-pleroma-mod/+page.svelte.md?plain=1#L12)。
+
+</details>
+
+
 ### 资料卡片
 
 #### 由 [藍+85CD](https://github.com/kwaa) 制作 | 演示 - [./kwaa.dev](https://kwaa.dev/about#关于我)
@@ -36,35 +66,6 @@
   ```
 
   您还可以参考使用例源码：[**blog/+page.svelte.md at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/urara/about/+page.svelte.md?plain=1#L13)。
-
-</details>
-
-### 状态提示
-
-#### 由 [藍+85CD](https://github.com/kwaa) 制作 | 演示 - [Seviche.cc](https://seviche.cc/2022-12-20-pleroma-mod/)
-
-<details>
-  <summary>配置</summary>
-  
-  **✅ 此拓展已包含在 Urara 中，无需额外下载。**
-
-  #### 在使用前需导入组件：
-
-  ```md
-  <script>
-    import Alert from '$lib/components/extra/alert.svelte'
-  </script>
-  ```
-
-  #### 使用方法：
-
-  ```md
-  <Alert status="warning" description="警告信息" title="警告标题"/>
-  ```
-
-  您可以根据需要修改提示的状态，可用的选项有：`info`、`success`、`warning` 和 `error`。
-
-  您还可以参考使用例源码：[**Urara-Blog/+page.svelte.md at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/urara/2022-12-20-pleroma-mod/+page.svelte.md?plain=1#L12)。
 
 </details>
 

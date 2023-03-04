@@ -4,6 +4,36 @@ It is people like you who bring extension plugins to this project, and the follo
 
 ## Article Components
 
+### Alert
+
+#### Made by [藍+85CD](https://github.com/kwaa) | Demo - [Seviche.cc](https://seviche.cc/2022-12-20-pleroma-mod/)
+
+<details>
+  <summary>Configuration</summary>
+  
+  **✅ This extension is included in Urara, no additional download is needed.**
+
+  #### Components to be imported before use:
+
+  ```md
+  <script>
+    import Alert from '$lib/components/extra/alert.svelte'
+  </script>
+  ```
+
+  #### Usage:
+
+  ```md
+  <Alert status="warning" description="warning message" title="warning title"/>
+  ```
+
+  You can modify the status of the prompt as needed. The available options are: `info`, `success`, `warning` and `error`.
+
+  You can also refer to the use case source code: [**Urara-Blog/+page.svelte.md at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/urara/2022-12-20-pleroma-mod/+page.svelte.md?plain=1#L12).
+
+</details>
+
+
 ### Profile Card
 
 #### Made by [藍+85CD](https://github.com/kwaa) | Demo - [./kwaa.dev](https://kwaa.dev/about#关于我)
@@ -36,35 +66,6 @@ It is people like you who bring extension plugins to this project, and the follo
   ```
 
   You can also refer to the use case source code: [**blog/+page.svelte.md at main · kwaa/blog**](https://github.com/kwaa/blog/blob/main/urara/about/+page.svelte.md?plain=1#L13).
-
-</details>
-
-### Alert
-
-#### Made by [藍+85CD](https://github.com/kwaa) | Demo - [Seviche.cc](https://seviche.cc/2022-12-20-pleroma-mod/)
-
-<details>
-  <summary>Configuration</summary>
-  
-  **✅ This extension is included in Urara, no additional download is needed.**
-
-  #### Components to be imported before use:
-
-  ```md
-  <script>
-    import Alert from '$lib/components/extra/alert.svelte'
-  </script>
-  ```
-
-  #### Usage:
-
-  ```md
-  <Alert status="warning" description="warning message" title="warning title"/>
-  ```
-
-  You can modify the status of the prompt as needed. The available options are: `info`, `success`, `warning` and `error`.
-
-  You can also refer to the use case source code: [**Urara-Blog/+page.svelte.md at main · Sevichecc/Urara-Blog**](https://github.com/Sevichecc/Urara-Blog/blob/main/urara/2022-12-20-pleroma-mod/+page.svelte.md?plain=1#L12).
 
 </details>
 
