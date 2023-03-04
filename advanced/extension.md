@@ -4,6 +4,12 @@ It is people like you who bring extension plugins to this project, and the follo
 
 ## Article Components
 
+### SvelteKit Embed
+
+#### Demo and Usage - [sveltekit-embed.vercel.app](https://sveltekit-embed.vercel.app/)
+
+**⚠ SvelteKit Embed has replaced the previous similar components, please refer to the latest usage method.**
+
 ### Alert
 
 #### Made by [藍+85CD](https://github.com/kwaa) | Demo - [Seviche.cc](https://seviche.cc/2022-12-20-pleroma-mod/)

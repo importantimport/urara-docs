@@ -4,6 +4,12 @@
 
 ## 文章組件
 
+### SvelteKit Embed
+
+#### 演示與使用方法 - [sveltekit-embed.vercel.app](https://sveltekit-embed.vercel.app/)
+
+**⚠ SvelteKit Embed 已替代了先前的同類組件，請參考最新的使用方法。**
+
 ### 狀態提示
 
 #### 由 [藍+85CD](https://github.com/kwaa) 製作 | 演示 - [Seviche.cc](https://seviche.cc/2022-12-20-pleroma-mod/)
