@@ -8,8 +8,8 @@
 
 ```ts
 export const site: SiteConfig = {
-  protocol: 'https://', // 協議（一般無需更改）
-  domain: (import.meta.env.URARA_SITE_DOMAIN as string) ?? 'urara-demo.netlify.app', // 域名
+  protocol: import.meta.env.URARA_SITE_PROTOCOL ?? import.meta.env.DEV ? 'http://' : 'https://', // 協議（一般無需更改）
+  domain: import.meta.env.URARA_SITE_DOMAIN ?? 'urara-demo.netlify.app', // 域名
   title: 'Urara', // 標題
   subtitle: 'Sweet & Powerful SvelteKit Blog Template', // 副標題
   lang: 'zh-TW', // 語言

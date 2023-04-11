@@ -8,8 +8,8 @@ This project uses `/src/lib/config/` as the config file directory, but most conf
 
 ```ts
 export const site: SiteConfig = {
-  protocol: 'https://', // site protocol (usually no change is required)
-  domain: (import.meta.env.URARA_SITE_DOMAIN as string) ?? 'urara-demo.netlify.app', // site domain
+  protocol: import.meta.env.URARA_SITE_PROTOCOL ?? import.meta.env.DEV ? 'http://' : 'https://', // site protocol (usually no change is required)
+  domain: import.meta.env.URARA_SITE_DOMAIN ?? 'urara-demo.netlify.app', // site domain
   title: 'Urara', // title
   subtitle: 'Sweet & Powerful SvelteKit Blog Template', // subtitle
   lang: 'en', // language
