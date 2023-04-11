@@ -12,7 +12,7 @@ export const site: SiteConfig = {
   domain: (import.meta.env.URARA_SITE_DOMAIN as string) ?? 'urara-demo.netlify.app', // site domain
   title: 'Urara', // title
   subtitle: 'Sweet & Powerful SvelteKit Blog Template', // subtitle
-  lang: 'en-US', // language
+  lang: 'en', // language
   descr: 'Powered by SvelteKit/Urara', // description
   author: {
     name: 'John Doe', // author name
@@ -118,7 +118,7 @@ export const footer: FooterConfig = {
 
 ```ts
 export const date: DateConfig = {
-  locales: 'en-US', // Language,refer to IETF language tag
+  locales: 'en', // Language, refer to IETF language tag
   options: {
     year: '2-digit', // Year: numeric / 2-digit
     weekday: 'long', // Week: narrow / short / long

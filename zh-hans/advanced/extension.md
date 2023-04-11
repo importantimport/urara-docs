@@ -176,7 +176,7 @@
 
   #### 使用方法：
 
-  访问 [Giscus](https://giscus.app/zh-CN) 页面进行配置，按照步骤配置后，您会获得以下内容：
+  访问 [Giscus](https://giscus.app/) 页面进行配置，按照步骤配置后，您会获得以下内容：
 
   ```ts
   <script src="https://giscus.app/client.js"

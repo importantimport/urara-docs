@@ -12,7 +12,7 @@ export const site: SiteConfig = {
   domain: (import.meta.env.URARA_SITE_DOMAIN as string) ?? 'urara-demo.netlify.app', // 域名
   title: 'Urara', // 標題
   subtitle: 'Sweet & Powerful SvelteKit Blog Template', // 副標題
-  lang: 'en-US', // 語言
+  lang: 'zh-TW', // 語言
   descr: 'Powered by SvelteKit/Urara', // 描述
   author: {
     name: 'John Doe', // 作者名稱
@@ -117,7 +117,7 @@ export const footer: FooterConfig = {
 
 ```ts
 export const date: DateConfig = {
-  locales: 'en-US', // 語言，可參考 IETF 語言標籤
+  locales: 'zh-TW', // 語言，可參考 IETF 語言標籤
   options: {
     year: '2-digit', // 年份: numeric / 2-digit
     weekday: 'long', // 星期: narrow / short / long

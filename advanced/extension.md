@@ -190,7 +190,7 @@ It is people like you who bring extension plugins to this project, and the follo
         data-emit-metadata="0"
         data-input-position="top"
         data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
+        data-lang="en"
         crossorigin="anonymous"
         async>
   </script>
@@ -212,7 +212,7 @@ It is people like you who bring extension plugins to this project, and the follo
         categoryID: '[enter category ID here]',
         reactionsEnabled: true, // reactions: true / false
         inputPosition: 'top' // position of comment box: top / bottom
-        lang: 'zh-CN', // language
+        lang: 'en', // language
         theme: 'preferred_color_scheme' // theme
       }
     }

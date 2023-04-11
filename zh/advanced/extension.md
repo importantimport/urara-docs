@@ -176,7 +176,7 @@
 
   #### 使用方法：
 
-  訪問 [**Giscus**](https://giscus.app/zh-CN) 頁面進行配置，按照步驟配置後，您會獲得以下內容：
+  訪問 [**Giscus**](https://giscus.app/) 頁面進行配置，按照步驟配置後，您會獲得以下內容：
 
   ```ts
   <script src="https://giscus.app/client.js"
@@ -190,7 +190,7 @@
         data-emit-metadata="0"
         data-input-position="top"
         data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
+        data-lang="zh-TW"
         crossorigin="anonymous"
         async>
   </script>
@@ -212,7 +212,7 @@
         categoryID: '[在此輸入分類 ID]',
         reactionsEnabled: true, // 表情回應: true / false
         inputPosition: 'top' // 評論框位置: top / bottom
-        lang: 'zh-CN', // 語言
+        lang: 'zh-TW', // 語言
         theme: 'preferred_color_scheme' // 主題
       }
     }
